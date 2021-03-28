@@ -1,0 +1,38 @@
+{
+  "name": "universal-problem-solver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "shybyte@users.noreply.github.com",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "bench": "zakzak --path ./dist/benches"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@dynatrace/zakzak": "^0.6.5",
+    "@types/jest": "^26.0.21",
+    "@types/lodash": "^4.14.168",
+    "lodash": "^4.17.21",
+    "ts-jest": "^26.5.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "rootDir": ".",
+    "testRegex": "test/*.ts$",
+    "transform": {
+      "^.+\\.(t|j)s(x?)$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
